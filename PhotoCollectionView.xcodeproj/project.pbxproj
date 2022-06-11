@@ -13,6 +13,7 @@
 		2BF9F6312854C6A100CC9D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9F6302854C6A100CC9D6E /* Assets.xcassets */; };
 		2BF9F6342854C6A100CC9D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9F6322854C6A100CC9D6E /* LaunchScreen.storyboard */; };
 		2BF9F63C2854C7FA00CC9D6E /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9F63B2854C7FA00CC9D6E /* PhotosCollectionViewController.swift */; };
+		2BF9F63E2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9F63D2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2BF9F6332854C6A100CC9D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF9F6352854C6A100CC9D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF9F63B2854C7FA00CC9D6E /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		2BF9F63D2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2BF9F6322854C6A100CC9D6E /* LaunchScreen.storyboard */,
 				2BF9F6352854C6A100CC9D6E /* Info.plist */,
 				2BF9F63B2854C7FA00CC9D6E /* PhotosCollectionViewController.swift */,
+				2BF9F63D2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift */,
 			);
 			path = PhotoCollectionView;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BF9F63C2854C7FA00CC9D6E /* PhotosCollectionViewController.swift in Sources */,
+				2BF9F63E2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift in Sources */,
 				2BF9F6282854C6A000CC9D6E /* AppDelegate.swift in Sources */,
 				2BF9F62A2854C6A000CC9D6E /* SceneDelegate.swift in Sources */,
 			);
