@@ -63,19 +63,13 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCollectionViewCell
-        
-        let test = "Photo did set with width \(cell.dogImageView.frame.width) and height \(cell.dogImageView.frame.height)"
-        
-        print("Before photo setting \(test)")
     
         cell.dogImageView.image = UIImage(named: photos[indexPath.item])
+        cell.dogImageView.layoutIfNeeded()
         
-        let test1 = "Photo did set with width \(cell.dogImageView.frame.width) and height \(cell.dogImageView.frame.height) \n"
+        cell.dogImageView.layer.cornerRadius = cell.dogImageView.frame.height / 2
+        cell.dogImageView.layer.masksToBounds = true
         
-        print("Aftef photo setting \(test1)")
-     //   cell.dogImageView.contentMode = .scaleAspectFill
-   //     cell.dogImageView.clipsToBounds = true
-  //      cell.dogImageView.layer.cornerRadius = cell.dogImageView.frame.height / 2
         return cell
     }
     
@@ -83,14 +77,6 @@ class PhotosCollectionViewController: UICollectionViewController {
         if segue.identifier == "sendPhotoSegue" {
             guard let photoVC = segue.destination as? PhotoViewController else { return }
             guard let cell = sender as? PhotoCollectionViewCell else { return }
-            
-            let test = "Photo did set with width \(cell.dogImageView.frame.width) and height \(cell.dogImageView.frame.height)"
-            
-            print("Before photo setting \(test)")
-            
-            let test1 = "Photo did set with width \(cell.dogImageView.frame.width) and height \(cell.dogImageView.frame.height)"
-            
-            print("Aftef photo setting \(test1)")
             
             photoVC.image = cell.dogImageView.image
             

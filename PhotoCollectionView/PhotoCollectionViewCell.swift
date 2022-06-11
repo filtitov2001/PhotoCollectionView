@@ -11,10 +11,5 @@ import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var dogImageView: UIImageView! {
-        didSet {
-            let test = "Photo did set with width \(dogImageView.frame.width) and height \(dogImageView.frame.height)"
-            print(test)
-        }
-    }
+    @IBOutlet var dogImageView: UIImageView!
 }
