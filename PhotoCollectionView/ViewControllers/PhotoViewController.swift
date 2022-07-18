@@ -33,4 +33,8 @@ class PhotoViewController: UIViewController {
         present(shareController, animated: true)
     }
     
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }

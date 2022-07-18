@@ -12,4 +12,12 @@ import UIKit
 class PhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var dogImageView: UIImageView!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layoutIfNeeded()
+        
+        dogImageView.layer.masksToBounds = true
+        dogImageView.layer.cornerRadius = dogImageView.frame.height / 2
+    }
 }

@@ -41,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BD1974B28857A6E00743643 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9F63B2854C7FA00CC9D6E /* PhotosCollectionViewController.swift */,
+				2BF9F63F2854E53700CC9D6E /* PhotoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2BD1974C28857A7900743643 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9F63D2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BD1974D28857A8800743643 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9F62D2854C6A000CC9D6E /* Main.storyboard */,
+				2BF9F6322854C6A100CC9D6E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2BD1974E28857A9500743643 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9F6302854C6A100CC9D6E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BD1974F28857A9F00743643 /* App Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9F6272854C6A000CC9D6E /* AppDelegate.swift */,
+				2BF9F6292854C6A000CC9D6E /* SceneDelegate.swift */,
+				2BF9F6352854C6A100CC9D6E /* Info.plist */,
+			);
+			path = "App Supporting files";
+			sourceTree = "<group>";
+		};
 		2BF9F61B2854C6A000CC9D6E = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +104,11 @@
 		2BF9F6262854C6A000CC9D6E /* PhotoCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				2BF9F6272854C6A000CC9D6E /* AppDelegate.swift */,
-				2BF9F6292854C6A000CC9D6E /* SceneDelegate.swift */,
-				2BF9F62D2854C6A000CC9D6E /* Main.storyboard */,
-				2BF9F6302854C6A100CC9D6E /* Assets.xcassets */,
-				2BF9F6322854C6A100CC9D6E /* LaunchScreen.storyboard */,
-				2BF9F6352854C6A100CC9D6E /* Info.plist */,
-				2BF9F63B2854C7FA00CC9D6E /* PhotosCollectionViewController.swift */,
-				2BF9F63D2854D2BD00CC9D6E /* PhotoCollectionViewCell.swift */,
-				2BF9F63F2854E53700CC9D6E /* PhotoViewController.swift */,
+				2BD1974F28857A9F00743643 /* App Supporting files */,
+				2BD1974D28857A8800743643 /* Storyboards */,
+				2BD1974E28857A9500743643 /* Resources */,
+				2BD1974B28857A6E00743643 /* ViewControllers */,
+				2BD1974C28857A7900743643 /* Views */,
 			);
 			path = PhotoCollectionView;
 			sourceTree = "<group>";
@@ -297,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoCollectionView/Info.plist;
+				INFOPLIST_FILE = "PhotoCollectionView/App Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoCollectionView/Info.plist;
+				INFOPLIST_FILE = "PhotoCollectionView/App Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

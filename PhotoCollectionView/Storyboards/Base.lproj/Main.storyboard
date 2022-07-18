@@ -76,13 +76,27 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovZ-j4-Rpd">
                                 <rect key="frame" x="139.5" y="777" width="135.5" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title=" Tap to Share" image="square.and.arrow.up" catalog="system">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="shareButtonTapped:" destination="Iu9-2v-Zep" eventType="touchUpInside" id="L5r-8q-JUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0z-Hb-cOm">
+                                <rect key="frame" x="359" y="64" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Gat-Im-fhu"/>
+                                    <constraint firstAttribute="height" constant="35" id="Sth-Gl-6VS"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <backgroundConfiguration key="background" cornerRadius="17.5"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="Iu9-2v-Zep" eventType="touchUpInside" id="MBI-X9-lvv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,7 +106,9 @@
                             <constraint firstItem="ovZ-j4-Rpd" firstAttribute="centerX" secondItem="D6I-85-Ihh" secondAttribute="centerX" id="0w3-mb-dud"/>
                             <constraint firstItem="ZDb-9M-dVN" firstAttribute="trailing" secondItem="3i6-Pe-nuq" secondAttribute="trailing" id="5XE-hN-kPA"/>
                             <constraint firstItem="ZDb-9M-dVN" firstAttribute="centerY" secondItem="D6I-85-Ihh" secondAttribute="centerY" constant="-23.5" id="LEI-aG-4If"/>
+                            <constraint firstItem="H0z-Hb-cOm" firstAttribute="top" secondItem="D6I-85-Ihh" secondAttribute="topMargin" constant="20" id="PC8-kP-8zy"/>
                             <constraint firstItem="3i6-Pe-nuq" firstAttribute="bottom" secondItem="ovZ-j4-Rpd" secondAttribute="bottom" constant="40" id="dZK-UI-twN"/>
+                            <constraint firstItem="3i6-Pe-nuq" firstAttribute="trailing" secondItem="H0z-Hb-cOm" secondAttribute="trailing" constant="20" id="tDk-7I-dlQ"/>
                             <constraint firstItem="ZDb-9M-dVN" firstAttribute="leading" secondItem="3i6-Pe-nuq" secondAttribute="leading" id="xOi-Nn-96i"/>
                         </constraints>
                     </view>

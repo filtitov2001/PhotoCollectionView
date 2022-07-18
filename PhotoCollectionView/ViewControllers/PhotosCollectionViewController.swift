@@ -50,14 +50,7 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return photos.count
     }
 
@@ -65,10 +58,6 @@ class PhotosCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCollectionViewCell
     
         cell.dogImageView.image = UIImage(named: photos[indexPath.item])
-        cell.dogImageView.layoutIfNeeded()
-        
-        cell.dogImageView.layer.cornerRadius = cell.dogImageView.frame.height / 2
-        cell.dogImageView.layer.masksToBounds = true
         
         return cell
     }
